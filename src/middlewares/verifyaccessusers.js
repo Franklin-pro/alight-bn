@@ -1,30 +1,27 @@
 import errormessage from "../utils/errormessage.js";
-import Jwt,{JsonWebTokenError}  from "jsonwebtoken";
+import jwt from "jsonwebtoken";
 
-const verifyAccessUsers=(req,res,next)=>{
-    
-    const token=req.headers["alight"]
-    if(!token){
-        return errormessage(res,401,`no token provided`)
-    }
-    else {
+const verifyAccessUsers = (req, res, next) => {
+    const token = req.headers["alight"];
+    if (!token) {
+        return errormessage(res, 401, `No token provided`);
+    } else {
         try {
-            const verifytoken=Jwt.verify(token,process.env.SECRET_KEY,{expiresIn:"1d"})
-            req.user=verifytoken.user
-            if(verifytoken.user.Role !=="admin" && verifytoken.user.Role !=="user"){
-                return errormessage(res,401,`you don't have access`)
-            }
-            else{
-                next()
+            const verifytoken = jwt.verify(token, process.env.SECRET_KEY, { expiresIn: "1d" });
+            req.user = verifytoken.user;
+            if (verifytoken.user.Role !== "admin" && verifytoken.user.Role !== "user") {
+                return errormessage(res, 401, `You don't have access`);
+            } else {
+                next();
             }
         } catch (error) {
-            if(error=JsonWebTokenError){
-                return errormessage(res,401,`invalid token`)
+            if (error instanceof jwt.JsonWebTokenError) {
+                return errormessage(res, 401, `Invalid token`);
+            } else {
+                return errormessage(res, 500, `Internal server error`);
             }
-            
         }
-       
     }
 }
 
-export default verifyAccessUsers
+export default verifyAccessUsers;
