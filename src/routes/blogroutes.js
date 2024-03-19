@@ -1,7 +1,7 @@
 import express from "express";
-import BlogController from "../controller/blogcontroller";
-import verifyAccess from "../middlewares/verifyaccess"
-import verifyAccessUsers from "../middlewares/verifyaccessusers";
+import BlogController from "../controller/blogcontroller.js";
+import verifyAccess from "../middlewares/verifyaccess.js"
+import verifyAccessUsers from "../middlewares/verifyaccessusers.js";
 
 const router=express.Router()
 

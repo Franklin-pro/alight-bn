@@ -1,5 +1,5 @@
-import errormessage from "../utils/errormessage";
-import USER from "../model/user";
+import errormessage from "../utils/errormessage.js";
+import USER from "../model/user.js";
 
 class DataChecker{
     static async UserRegisterEmpty(req,res,next){

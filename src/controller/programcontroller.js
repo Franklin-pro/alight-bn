@@ -1,8 +1,8 @@
-import PROGRAM from "../model/program";
-import USER from "../model/user";
-import errormessage from "../utils/errormessage";
-import programEmail from "../utils/programemail";
-import successmessage from "../utils/successmessage";
+import PROGRAM from "../model/program.js";
+import USER from "../model/user.js";
+import programEmail from "../utils/programemail.js";
+import errormessage from "../utils/errormessage.js";
+import successmessage  from "../utils/successmessage.js";
 
 
 class ProgramController{

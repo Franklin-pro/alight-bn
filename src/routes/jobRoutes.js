@@ -1,8 +1,8 @@
 import express from "express"
-import jobController from "../controller/jobController";
-import Validator from "../middlewares/validator";
-import verifyaccess from "../middlewares/verifyaccess";
-import datachecker from "../middlewares/datachecker";
+import jobController from "../controller/jobController.js";
+import Validator from "../middlewares/validator.js";
+import verifyaccess from "../middlewares/verifyaccess.js";
+import datachecker from "../middlewares/datachecker.js";
 
 
 

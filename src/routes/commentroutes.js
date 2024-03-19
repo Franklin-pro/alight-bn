@@ -1,7 +1,7 @@
 import express from "express";
-import CommentController from "../controller/commentcontroller";
-import verifyAccessUsers from "../middlewares/verifyaccessusers";
-import VerifyAccess from "../middlewares/verifyaccess";
+import CommentController from "../controller/commentcontroller.js";
+import verifyAccessUsers from "../middlewares/verifyaccessusers.js";
+import VerifyAccess from "../middlewares/verifyaccess.js";
 
 const router=express.Router()
 

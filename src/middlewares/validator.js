@@ -1,4 +1,4 @@
-import errormessage from "../utils/errormessage";
+import errormessage from "../utils/errormessage.js";
 import { check,validationResult } from "express-validator";
 
 class Validator{

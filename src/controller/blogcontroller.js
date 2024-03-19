@@ -1,8 +1,8 @@
-import BLOG from "../model/blog";
-import errormessage from "../utils/errormessage";
-import successmessage from "../utils/successmessage";
-import blogEmail from "../utils/blogemail";
-import USER from "../model/user";
+import BLOG from "../model/blog.js";
+import errormessage from "../utils/errormessage.js";
+import successmessage  from "../utils/successmessage.js";
+import blogEmail from "../utils/blogemail.js";
+import USER from "../model/user.js";
 
 class BlogController{
     static async CreateBlog(req,res,){

@@ -1,8 +1,8 @@
-import TESTIMONIAL from "../model/testimonial";
-import USER from "../model/user";
-import errormessage from "../utils/errormessage";
-import successmessage from "../utils/successmessage";
-import testimonialEmail from "../utils/testimonialemail";
+import TESTIMONIAL from "../model/testimonial.js";
+import USER from "../model/user.js";
+import errormessage from "../utils/errormessage.js";
+import successmessage  from "../utils/successmessage.js";
+import testimonialEmail from "../utils/testimonialemail.js";
 
 
 class TestimonialController{

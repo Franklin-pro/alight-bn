@@ -1,7 +1,7 @@
 import express from "express";
-import TestimonialController from "../controller/testimonialcontroller";
-import VerifyAccess from "../middlewares/verifyaccess";
-import verifyAccessUsers from "../middlewares/verifyaccessusers";
+import TestimonialController from "../controller/testimonialcontroller.js";
+import VerifyAccess from "../middlewares/verifyaccess.js";
+import verifyAccessUsers from "../middlewares/verifyaccessusers.js";
 
 const router=express.Router()
 

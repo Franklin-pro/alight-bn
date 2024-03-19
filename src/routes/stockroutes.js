@@ -1,7 +1,7 @@
 import express from "express";
-import StockController from "../controller/stockcontroller";
-import verifyAcssess from "../middlewares/verifyaccess";
-import verifyAccessUsers from "../middlewares/verifyaccessusers";
+import StockController from "../controller/stockcontroller.js";
+import verifyAcssess from "../middlewares/verifyaccess.js";
+import verifyAccessUsers from "../middlewares/verifyaccessusers.js";
 
 const router=express.Router()
 

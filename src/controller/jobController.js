@@ -1,6 +1,6 @@
-import job from "../model/job";
-import errormessage from "../utils/errormessage";
-import successmessege from "../utils/successmessage";
+import job from "../model/job.js";
+import errormessage from "../utils/errormessage.js";
+import successmessege from "../utils/successmessage.js";
 import jwt from "jsonwebtoken";
 
 class jobController {

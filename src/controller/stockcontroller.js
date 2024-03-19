@@ -1,8 +1,8 @@
-import STOCK from "../model/stock";
-import errormessage from "../utils/errormessage";
-import successmessage from "../utils/successmessage";
-import USER from "../model/user";
-import stockEmail from "../utils/stockemail";
+import STOCK from "../model/stock.js";
+import errormessage from "../utils/errormessage.js";
+import successmessage  from "../utils/successmessage.js";
+import USER from "../model/user.js";
+import stockEmail from "../utils/stockemail.js";
 
 class StockController{
     static async ImportProduct(req,res){

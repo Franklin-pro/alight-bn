@@ -1,7 +1,7 @@
-import ApplyJob from "../model/applyjob";
-import job from "../model/job";
-import errormessage from "../utils/errormessage";
-import successmessage  from "../utils/successmessage";
+import ApplyJob from "../model/applyjob.js";
+import job from "../model/job.js";
+import errormessage from "../utils/errormessage.js";
+import successmessage  from "../utils/successmessage.js";
 
 class ApplyJobController{
     static async ApplyOneJob(req,res){

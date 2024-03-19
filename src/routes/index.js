@@ -1,13 +1,13 @@
 
 import express from "express";
-import userroutes from "./userroutes";
-import programroutes from "./programroutes";
-import testimonialroutes from "./testimonialroutes";
-import stockroutes from "./stockroutes";
-import Applyroutes from "./applyroutes";
-import jobRoutes from "./jobRoutes"
-import blogrouter from "./blogroutes";
-import commentroutes from "./commentroutes";
+import userroutes from "./userroutes.js";
+import programroutes from "./programroutes.js";
+import testimonialroutes from "./testimonialroutes.js";
+import stockroutes from "./stockroutes.js";
+import Applyroutes from "./applyroutes.js";
+import jobRoutes from "./jobRoutes.js"
+import blogrouter from "./blogroutes.js";
+import commentroutes from "./commentroutes.js";
 
 const router=express.Router();
 

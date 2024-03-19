@@ -1,9 +1,9 @@
-import USER from "../model/user";
-import successmessage from "../utils/successmessage";
-import errormessage from "../utils/errormessage";
+import USER from "../model/user.js";
+import errormessage from "../utils/errormessage.js";
+import successmessage  from "../utils/successmessage.js";
 import bcrypt from "bcrypt";
 import Jwt  from "jsonwebtoken";
-import welcomeEmail from "../utils/email";
+import welcomeEmail from "../utils/email.js";
 
 class UserController{
     static async CreateUser(req,res){

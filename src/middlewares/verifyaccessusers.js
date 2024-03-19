@@ -1,4 +1,4 @@
-import errormessage from "../utils/errormessage";
+import errormessage from "../utils/errormessage.js";
 import Jwt,{JsonWebTokenError}  from "jsonwebtoken";
 
 const verifyAccessUsers=(req,res,next)=>{

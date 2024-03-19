@@ -1,7 +1,7 @@
-import BLOG from "../model/blog";
-import COMMENT from "../model/comment";
-import errormessage from "../utils/errormessage";
-import successmessage from "../utils/successmessage";
+import BLOG from "../model/blog.js";
+import COMMENT from "../model/comment.js";
+import errormessage from "../utils/errormessage.js";
+import successmessage  from "../utils/successmessage.js";
 
 class CommentController{
     static async CreateComment(req,res){

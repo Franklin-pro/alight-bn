@@ -1,6 +1,6 @@
 import express from "express";
-import ProgramController from "../controller/programcontroller";
-import VerifyAccess from "../middlewares/verifyaccess";
+import ProgramController from "../controller/programcontroller.js";
+import VerifyAccess from "../middlewares/verifyaccess.js";
 
 const router=express.Router()
 
